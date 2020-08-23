@@ -1,15 +1,16 @@
 module.exports = `
-*-=[ 🤖 Menu AZ Bot V.1.0 🤖 ]=-*
-
+Nama : *AZ WhatsApp Bot*
+Dibuat Oleh : *Alif Putra Darmawan*
+Version Bot : *1.0 BETA*
 • *#menu*: Menampilkan Menu Utama
 • *#stiker*: Mengubah Gambar Menjadi Sticker
 • *#korona*:  Menampilkan Data Korona Indonesia, data Realtime & Terupdate dari sumber terpercaya
 • *#quotes*: Random Update Quotes
-• *#walpaper*: Random Gambar Walpaper
+• *#wp*: Random Gambar Walpaper
 • *#zodiak*: Menampilkan Zodiak Kamu
 • *#kontak*: Menampilkan Kontak Pembuat Bot Ini
 
-AZ Bot © By Alif Putra Darmawan`;
+*AZ WhatsApp Bot © 2020* `;
 
 // *#ig(spasi)link*
 // _Download foto 🖼 atau video 🎥 dari instagram_
