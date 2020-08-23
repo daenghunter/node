@@ -30,14 +30,11 @@ const messageHandler = async (message, client) => {
   const stickerCreatedMsg = `(${name} - ${number}) membuat stiker 🚀`;
   const inMsg = `(${name} - ${number}) mengirim pesan ${command} 📩`;
   const inMsgImgNoCapt = `(${name} - ${number}) mengirim gambar tanpa caption 📩`;
-  const waitStickerMsg = '_Tunggu bentar stiker lagi dibuat,kalau sudah dapet pesan ini tinggal tunggu aja ya ⏳_';
+  const waitStickerMsg = '_Please Waiting... ⏳_';
   const thxMsg = '_Iya sama - sama 🤖_';
   // const waitVidMsg = '_Video lagi di upload tunggu aja 🎥_';
   const waitDataMsg = '_Tunggu sebentar sementara lagi di proses ⏳_';
-  const wrongMsg = '_Kayaknya ada yang salah, coba nanti lagi 🚴🏻_';
   const noCaptMsg = '_Pakai caption ya jangan gambar doang atau kalau lupa tinggal bales aja digambarnya, ketik #menu 🤖_';
-  const unkMsg = '_Yang bener dong coba ketik *#menu*, kalau ngasal nanti aku block lho 🤖_';
-  const doneMsg = '_Tugas saat ini sudah selesai, untuk melakukan perintah baru silahkan balas #menu_';
 
   try {
     switch (command) {
