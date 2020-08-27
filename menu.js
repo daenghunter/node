@@ -1,5 +1,5 @@
 module.exports = `
-Nama : *AZ WhatsApp Bot*
+Nama : *HR WhatsApp Bot*
 Dibuat Oleh : *Alif Putra Darmawan*
 Version Bot : *1.0 BETA*
 • *#menu*: Menampilkan Menu Utama
@@ -10,7 +10,7 @@ Version Bot : *1.0 BETA*
 • *#zodiak*: Menampilkan Zodiak Kamu
 • *#kontak*: Menampilkan Kontak Pembuat Bot Ini
 
-*AZ WhatsApp Bot © 2020* `;
+*HR WhatsApp Bot © 2020* `;
 
 // *#ig(spasi)link*
 // _Download foto 🖼 atau video 🎥 dari instagram_
