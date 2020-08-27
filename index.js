@@ -89,7 +89,7 @@ const messageHandler = async (message, client) => {
         client.sendText(from, doneMsg);
         break;
 		  case '#kontak':
-          client.sendText(from, '*-=[ 🤖 Contact Owner 🤖 ]=-* \n • Whatsapp: wa.me/6281342077268 \n • Instagram: @alfiyanpro.id')
+          client.sendText(from, '*-=[ 🤖 Contact Owner 🤖 ]=-* \n • Whatsapp: wa.me/6281246114524')
           break;
           case '#rules':
             client.sendText(from, '*-=[ 🤖 Rules AZ Bot V.1.0 🤖 ]=-*  \n • *Jangan spam bot ..* \n • *Jangan rusuh kalo bot tidak aktif* \n • *Jangan telfon / vc bot nya*(_auto block_ ) \n • *Sesuai kan perintah dengan formatnya..* \n _salah format dan bot error = block_ \n • *Jika ingin menyumbang ke AZ bot silahkan chat admin melalui #kontak* \n\n\n *Created by © Alif Putra Darmawan*
