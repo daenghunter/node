@@ -30,11 +30,8 @@ const messageHandler = async (message, client) => {
   const stickerCreatedMsg = `(${name} - ${number}) membuat stiker 🚀`;
   const inMsg = `(${name} - ${number}) mengirim pesan ${command} 📩`;
   const inMsgImgNoCapt = `(${name} - ${number}) mengirim gambar tanpa caption 📩`;
-  const waitStickerMsg = '_Please Waiting... ⏳_';
+  const waitStickerMsg = '_Sedang di proses_';
   const thxMsg = '_Iya sama - sama 🤖_';
-  // const waitVidMsg = '_Video lagi di upload tunggu aja 🎥_';
-  const waitDataMsg = '_Tunggu sebentar sementara lagi di proses ⏳_';
-  const noCaptMsg = '_Pakai caption ya jangan gambar doang atau kalau lupa tinggal bales aja digambarnya, ketik #menu 🤖_';
 
   try {
     switch (command) {
@@ -67,19 +64,6 @@ const messageHandler = async (message, client) => {
           client.sendText(from, doneMsg);
         }
         break;
-      case '#menu':
-	  case 'menu':
-	  case 'Menu':
-        debug(inMsg);
-        client.sendText(from, menu);
-        break;
-      case '#korona':
-	  case 'corona':
-        debug(inMsg);
-        client.sendText(from, waitDataMsg);
-        client.sendText(from, await korona());
-        client.sendText(from, doneMsg);
-        break;
       case '#quotes':
 	  case 'quotes':
 	  case 'Quotes':
@@ -88,12 +72,6 @@ const messageHandler = async (message, client) => {
         client.sendText(from, quotes());
         client.sendText(from, doneMsg);
         break;
-		  case '#kontak':
-          client.sendText(from, '*-=[ 🤖 Contact Owner 🤖 ]=-* \n • Whatsapp: wa.me/6281246114524')
-          break;
-          case '#rules':
-            client.sendText(from, '*-=[ 🤖 Rules AZ Bot V.1.0 🤖 ]=-*  \n • *Jangan spam bot ..* \n • *Jangan rusuh kalo bot tidak aktif* \n • *Jangan telfon / vc bot nya*(_auto block_ ) \n • *Sesuai kan perintah dengan formatnya..* \n _salah format dan bot error = block_ \n • *Jika ingin menyumbang ke AZ bot silahkan chat admin melalui #kontak* \n\n\n *Created by © Alif Putra Darmawan*')
-break;
       // case '#ig':
       //   debug(inMsg);
       //   client.sendText(from, waitDataMsg);
@@ -109,37 +87,6 @@ break;
       //     }
       //   });
       //   break;
-      case '#wp':
-      case 'wp':
-      case 'Wp':
-	  case 'wallpaper':
-	  case 'Wallpaper':
-        debug(inMsg);
-        client.sendText(from, waitDataMsg);
-        wallpaper
-          .then((result) => {
-            client.sendFileFromUrl(from, result);
-            client.sendText(from, doneMsg);
-          })
-          .catch((error) => {
-            client.sendText(from, wrongMsg);
-            console.log(error.message);
-          });
-        break;
-      case '#zodiak':
-	  case 'zodiak':
-	  case 'Zodiak':
-        debug(inMsg);
-        client.sendText(from, waitDataMsg);
-        getZodiak(args1, args2)
-          .then((result) => {
-            client.sendText(from, result);
-            client.sendText(from, doneMsg);
-          })
-          .catch((error) => {
-            client.sendText(from, wrongMsg);
-            console.log(error.message);
-          });
         break;
       default:
         if (!isGroupMsg) {
